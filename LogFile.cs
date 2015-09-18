@@ -119,7 +119,7 @@ namespace PSLogging
                 CheckDirectory();
                 if (message.Trim() != String.Empty)
                 {
-                    message = String.Format("{0,-29} - {1}", DateTime.Now.ToString(DateTimeFormat), message);
+                    message = String.Format("{0,-29} - [I] {1}", DateTime.Now.ToString(DateTimeFormat), message);
                 }
 
                 File.AppendAllText(System.IO.Path.Combine(path, fileName), message);
