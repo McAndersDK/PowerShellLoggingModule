@@ -11,7 +11,7 @@ namespace PSLogging
     {
         #region Fields
 
-        private const string DateTimeFormat = "r";
+        private const string DateTimeFormat = "yyyy-MM-ddThh:mm:ssK";
         private readonly string fileName;
         private readonly string path;
 
